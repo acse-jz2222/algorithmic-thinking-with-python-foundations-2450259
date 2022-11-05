@@ -1,13 +1,18 @@
 def linear_search(data, target):
-    n = len(data)
-    found = -1
+    # n = len(data)
+    # found = -1
 
-    for i in range(n):
-        if data[i] == target:
-            found = 1
-            return i
+    # for i in range(n):
+    #     if data[i] == target:
+    #         found = 1
+    #         return i
 
-    return found
+    # return found
+    # use enumerate
+    for idx, val in enumerate(data):
+        if val == target:
+            return idx
+    return -1
 
 
 data = [4, 5, 2, 7, 1, 8]
