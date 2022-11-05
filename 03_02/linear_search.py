@@ -1,5 +1,13 @@
 def linear_search(data, target):
-    pass
+    n = len(data)
+    found = -1
+
+    for i in range(n):
+        if data[i] == target:
+            found = 1
+            return i
+
+    return found
 
 
 data = [4, 5, 2, 7, 1, 8]
