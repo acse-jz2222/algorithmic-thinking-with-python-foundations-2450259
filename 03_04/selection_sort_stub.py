@@ -1,5 +1,21 @@
+def find_min(xs):
+    min_idx = 0
+
+    for i in range(len(xs)):
+        if xs[i] < xs[min_idx]:
+            min_idx = i
+
+    return min_idx
+
+
 def selection_sort(xs):
-    pass
+    for i in range(len(xs)-1):
+        temp = xs[i]
+        min_idx = find_min(xs[i:]) + i
+        xs[i] = xs[min_idx]
+        xs[min_idx] = temp
+
+    return xs
 
 
 xs = [3, 2, 1, 5, 4]
