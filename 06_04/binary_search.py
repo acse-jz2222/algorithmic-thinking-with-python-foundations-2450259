@@ -2,7 +2,20 @@ import random
 
 
 def binary_search(data, target):
-    pass
+    left, right = 0, len(data) - 1
+
+    mid = (left + right) // 2
+
+    while mid > left:
+        if data[mid] == target:
+            return mid
+        elif data[mid] < target:
+            left = mid
+        else:
+            right = mid
+        mid = (left + right) // 2
+
+    return -1
 
 
 n = 10
