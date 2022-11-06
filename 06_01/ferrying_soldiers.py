@@ -1,6 +1,13 @@
 """
 Ferrying Soldiers Puzzle Python Implementation
 Robin Andrews - https://compucademy.net/
+
+group of 20 adults
+two boys playing in small boat
+boat carry single adult or two boys
+how can they all get across, leaving two boys
+in boat on same side as they started
+minimum number of crossings
 """
 
 NUM_SOLDIERS = 20
